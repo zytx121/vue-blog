@@ -1,3 +1,0 @@
---check-leaks
-test/e2e/setup.js
-test/e2e/specs/*.spec.js
