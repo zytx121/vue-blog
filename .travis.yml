@@ -38,10 +38,10 @@ after_success:
   - cp index.html 404.html
   - git add --all .
   - git commit --message "Automatically update from travis-ci"
-  - git push --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
 
 # Note: you should set Environment Variables here or 'Settings' on travis-ci.org
 env:
   global:
     - GH_REF: github.com/zytx121/vue-blog.git
-    # - GH_TOKEN: 8f3a74a6e29f5d3f09e400bf698e2b32815fee4f
+     - GH_TOKEN: 8f3a74a6e29f5d3f09e400bf698e2b32815fee4f
