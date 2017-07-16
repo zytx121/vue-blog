@@ -1,6 +1,6 @@
 branches:
   only:
-    - develop
+    - master
 
 language: node_js
 
@@ -44,4 +44,4 @@ after_success:
 env:
   global:
     - GH_REF: github.com/zytx121/vue-blog.git
-    # - GH_TOKEN: 'Your GitHub Personal access tokens, via https://github.com/settings/tokens'
+    # - GH_TOKEN: 8f3a74a6e29f5d3f09e400bf698e2b32815fee4f
